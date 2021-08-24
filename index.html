@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/cat.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encuesta de mascotas</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title" id="title">Formulario de encuesta de ¡Mascotas!</h1>
+        <p class="header__description" id="description">
+            Si tienes un minuto, ¡ayudanos a a conocer a la mascota más importante para ti!
+        </p>
+    </header>
+    <main class="main">
+        <form action="#" class="form" id="survey-form">
+            <div class="form__grupo">
+                <label class="form__label" for="name" id="name-label">Nombre</label>
+                <input class="form__input" type="text" id="name" placeholder="Nombre" required>
+            </div>
+
+            <div class="form__grupo">
+                <label class="form__label" for="email" id="email-label">Email</label>
+                <input class="form__input" type="email" id="email" placeholder="ejemplo@mail.com" required>
+            </div>
+
+            <div class="form__grupo">
+                <label class="form__label" for="number" id="number-label">¿Cuántas mascotas tienes?</label>
+                <input class="form__input" type="number" id="number" min="0" max="100" placeholder="cantidad">
+            </div>
+
+            <div class="form__grupo">
+                <p class="form__pregunta">¿Cual de las siguientes es tu favorita?</p>
+                <div>
+                    <input class="form__radio" id="perro" type="radio" name="mascotas" value="perros">
+                    <label class="form__pick" for="perro">Perro</label>
+                </div>
+
+                <div>
+                    <input class="form__radio" id="gato" type="radio" name="mascotas" value="gatos">
+                    <label class="form__pick" for="gato">Gato</label>
+                </div>
+
+                <div>
+                    <input class="form__radio" id="pajaro" type="radio" name="mascotas" value="pajaro">
+                    <label class="form__pick" for="pajaro">Pájaro</label>
+                </div>
+
+                <div>
+                    <input class="form__radio" id="hamster" type="radio" name="mascotas" value="hamster">
+                    <label class="form__pick" for="hamster">Hamster</label>
+                </div>
+
+                <div>
+                    <input class="form__radio" id="otro" type="radio" name="mascotas" value="otro">
+                    <label class="form__pick" for="otro">Otro</label>
+                </div>
+            </div>
+
+            <div class="form__grupo">
+                <p class="form__pregunta">¿Qué tienes en cuenta antes de pensar en tener una mascota?</p>
+                <div>
+                    <input class="form__check" id="necesidades" type="checkbox" name="consideraciones" value="necesidades">
+                    <label class="form__pick form__pick--check" for="necesidades">Las necesidades de cuidado del animal</label>
+                </div>
+
+                <div>
+                    <input class="form__check" id="cuidado" type="checkbox" name="consideraciones" value="cuidado">
+                    <label class="form__pick form__pick--check" for="cuidado">El costo del entrenamiento y del cuidado del animal</label>
+                </div>
+
+                <div>
+                    <input class="form__check" id="caracter" type="checkbox" name="consideraciones" value="caracter">
+                    <label class="form__pick form__pick--check" for="caracter">El caracter o temperamento particular del animal</label>
+                </div>
+            </div>
+
+            <div class="form__grupo">
+                <p class="form__pregunta">Si tienes mascota, ¿Cómo la conseguiste?</p>
+                <select class="form__desplegable" name="obtencion" id="dropdown">
+                    <option value="regalado">Te lo regalaron</option>
+                    <option value="encontrado">Lo encontraste</option>
+                    <option value="adoptado">Lo adoptaste</option>
+                    <option value="comprado">Lo compraste</option>
+                </select>
+            </div>
+
+            <div class="form__grupo">
+                <p class="form__pregunta">¿Algo que consideres importante comunicar para los amantes de las mascotas?
+                </p>
+                <textarea class="form__comentarios" name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Exprésate!"></textarea>
+            </div>
+
+
+            <div class="form__grupo">
+                <input type="submit" class="boton" id="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__autor">Diseñado por Aylen Gomez</p>
+    </footer>
+</body>
+
+</html>
